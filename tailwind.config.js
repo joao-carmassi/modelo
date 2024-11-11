@@ -13,8 +13,6 @@ module.exports = {
   },
   plugins: [require("tailwindcss-animate"), require("daisyui")],
   daisyui: {
-    styled: true,
     themes: [],
-    rtl: false,
   },
 };
