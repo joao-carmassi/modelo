@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "src/js",
+        "outDir": "dist/js",
         "noEmitOnError": true,
         "removeComments": true,
         "strict": true,
