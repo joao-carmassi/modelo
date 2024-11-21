@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "tw": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "start": "concurrently \"npm run tw\" \"npx tsc --watch\""
+    "tw": "npx tailwindcss -i ./dist/input.css -o ./dist/output.css --watch",
+    "ts": "npx tsc --watch",
+    "start": "concurrently \"npm run tw\" \"npm run ts\"",
+    "tw-minify": "npx tailwindcss -i ./dist/input.css -o ./dist/output.css --minify"
   },
   "keywords": [],
   "author": "",
