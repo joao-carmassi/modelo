@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "tw": "npx tailwindcss -i ./dist/input.css -o ./dist/output.css --watch",
+    "tw": "npx tailwindcss -i ./dist/resources/style/input.css -o ./dist/resources/style/output.css --watch",
     "ts": "npx tsc --watch",
     "start": "concurrently \"npm run tw\" \"npm run ts\"",
-    "tw-minify": "npx tailwindcss -i ./dist/input.css -o ./dist/output.css --minify"
+    "tw-minify": "npx tailwindcss -i ./dist/resources/input.css -o ./dist/resources/output.css --minify"
   },
   "keywords": [],
   "author": "",
