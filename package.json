@@ -6,7 +6,7 @@
     "tw": "npx tailwindcss -i ./dist/resources/style/input.css -o ./dist/resources/style/output.css --watch",
     "ts": "npx tsc --watch",
     "start": "concurrently \"npm run tw\" \"npm run ts\"",
-    "tw-minify": "npx tailwindcss -i ./dist/resources/input.css -o ./dist/resources/output.css --minify"
+    "tw-minify": "npx tailwindcss -i ./dist/resources/style/input.css -o ./dist/resources/style/output.css --minify"
   },
   "keywords": [],
   "author": "",
