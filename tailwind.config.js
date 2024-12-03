@@ -1,6 +1,9 @@
+import tailwindcssAnimate from "tailwindcss-animate";
+import daisyui from "daisyui";
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./dist/**/*.{html,js}"],
+export default {
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {},
@@ -11,8 +14,8 @@ module.exports = {
       keyframes: {},
     },
   },
-  plugins: [require("tailwindcss-animate"), require("daisyui")],
+  plugins: [tailwindcssAnimate, daisyui],
   daisyui: {
-    themes: ["light"],
+    themes: ["light", "dark"],
   },
 };
