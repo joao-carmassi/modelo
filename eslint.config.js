@@ -14,18 +14,18 @@ export default [
 
   ...pluginVue.configs["flat/essential"],
   ...vueTsEslintConfig(),
-  {
-    rules: {
-      "@typescript-eslint/ban-ts-comment": [
-        "error",
-        {
-          "ts-ignore": true,
-          "ts-nocheck": {
-            description:
-              "necessário para ignorar erros em arquivos específicos",
-          },
-        },
-      ],
-    },
-  },
+  // {
+  //   rules: {
+  //     "@typescript-eslint/ban-ts-comment": [
+  //       "error",
+  //       {
+  //         "ts-ignore": true,
+  //         "ts-nocheck": {
+  //           description:
+  //             "necessário para ignorar erros em arquivos específicos",
+  //         },
+  //       },
+  //     ],
+  //   },
+  // },
 ];
