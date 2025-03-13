@@ -1,0 +1,23 @@
+{
+  "name": "a",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "concurrently \"npx @tailwindcss/cli -i src/input.css -o dist/assets/app/output.css --watch\" \"npx tsc -w\"",
+    "build": "rmdir /s /q dist\\assets\\app && concurrently \"npx @tailwindcss/cli -m src/input.css -o dist/assets/app/output.css --minify\" \"npx esbuild src/main.ts --bundle --minify --outfile=dist/assets/app/main.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.14",
+    "concurrently": "^9.1.2",
+    "preline": "^3.0.0",
+    "tailwindcss": "^4.0.14",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.1"
+  }
+}
