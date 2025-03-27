@@ -1,3 +1,1 @@
-import chamaMensagem from "./utils/chamaLog.js";
-
-chamaMensagem();
+console.log("teste");
